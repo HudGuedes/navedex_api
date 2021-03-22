@@ -1,0 +1,25 @@
+version: '3.7'
+services:
+  db:
+    image: mariadb
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: 123
+  web:
+    build:
+      context: .
+      args:
+        - "BUILD_RAILS_ENV=development/test"
+    command: bundle exec rails s -p 3012 -b '0.0.0.0'
+    volumes:
+      - .:/navedex_api
+    ports:
+      - "3012:3012"
+    depends_on:
+      - db
+    environment:
+      PORT: 3012
+    tty: true
+    stdin_open: true
+    networks:
+      - default

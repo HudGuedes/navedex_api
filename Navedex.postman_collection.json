@@ -1,0 +1,327 @@
+{
+	"variables": [],
+	"info": {
+		"name": "Navedex",
+		"_postman_id": "2913670b-51c8-18c6-a6d5-02e215728ac8",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "navers",
+			"request": {
+				"url": "http://0.0.0.0:3012/navers",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIyIiwic2NwIjoidXNlciIsImF1ZCI6bnVsbCwiaWF0IjoxNjE2NDI3OTQwLCJleHAiOjE2MTY1MTQzNDAsImp0aSI6ImYwNTM0NDYzLTNmMWQtNGY2Yi1hOGZlLTNhNTI5MWI4ZmM3NCJ9.LrzzakmZT6zbOk1Stk_LtL-n5uUZDgW4vz1JMAiCV20",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\": \"Hudson Guedes\",\n\t\"birthdate\": \"1994-04-29\",\n\t\"admission_date\": \"2021-03-18\",\n\t\"job_role\": \"Junior development\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "navers/{id}",
+			"request": {
+				"url": "http://0.0.0.0:3012/navers/1",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxIiwic2NwIjoidXNlciIsImF1ZCI6bnVsbCwiaWF0IjoxNjE2NDI4Nzg0LCJleHAiOjE2MTY1MTUxODQsImp0aSI6IjkxOWY5MGE3LWM4NGItNDc0ZS04ZmRmLTFkM2QxZjdmODdkNyJ9.tR0as9jYuZ-Io1lK_zEqC1EiyFGcTYCBYHLF_ZSejW4",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"user\":{\n\t\t\"email\": \"hudson.guedes@gmail.com\",\n\t\t\"password\": \"123456\"\n\t}\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "navers/{id}",
+			"request": {
+				"url": "http://0.0.0.0:3012/navers/1",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIyIiwic2NwIjoidXNlciIsImF1ZCI6bnVsbCwiaWF0IjoxNjE2NDI3OTQwLCJleHAiOjE2MTY1MTQzNDAsImp0aSI6ImYwNTM0NDYzLTNmMWQtNGY2Yi1hOGZlLTNhNTI5MWI4ZmM3NCJ9.LrzzakmZT6zbOk1Stk_LtL-n5uUZDgW4vz1JMAiCV20",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\": \"Hudson Guedes\",\n\t\"birthdate\": \"1994-04-29\",\n\t\"admission_date\": \"2021-03-18\",\n\t\"job_role\": \"Senior development\",\n\t\"projects\": [1]\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "navers",
+			"request": {
+				"url": "http://0.0.0.0:3012/navers",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxIiwic2NwIjoidXNlciIsImF1ZCI6bnVsbCwiaWF0IjoxNjE2NDI4Nzg0LCJleHAiOjE2MTY1MTUxODQsImp0aSI6IjkxOWY5MGE3LWM4NGItNDc0ZS04ZmRmLTFkM2QxZjdmODdkNyJ9.tR0as9jYuZ-Io1lK_zEqC1EiyFGcTYCBYHLF_ZSejW4",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\": \"Hudson Guedes\",\n\t\"birthdate\": \"1994-04-29\",\n\t\"admission_date\": \"2021-03-18\",\n\t\"job_role\": \"Junior development\",\n\t\"projects\": [1]\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "login",
+			"request": {
+				"url": "http://0.0.0.0:3012/login",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Authorization",
+						"value": "Basic aHVkc29uLmd1ZWRlc0BnbWFpbC5jb206MTIzNDU2",
+						"description": "",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"user\":{\n\t\t\"email\": \"hudson.guedes@gmail.com\",\n\t\t\"password\": \"123456\"\n\t}\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "navers/{id}",
+			"request": {
+				"url": "http://0.0.0.0:3012/navers/3",
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxIiwic2NwIjoidXNlciIsImF1ZCI6bnVsbCwiaWF0IjoxNjE2NDI4Mjk4LCJleHAiOjE2MTY1MTQ2OTgsImp0aSI6ImUzMGRjY2ViLWM1NWUtNDFlZS05YmFjLWNjMWUxOGFiN2I2NyJ9.b2aVaT0aEecdss3dpxjKF8q_PxOAYZCq_krVFtm7Y5Q",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\": \"Bastiao\",\n\t\"birthdate\": \"1994-04-29\",\n\t\"admission_date\": \"2021-03-18\",\n\t\"job_role\": \"Senior development\",\n\t\"projects\": [1]\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "projects",
+			"request": {
+				"url": "http://0.0.0.0:3012/projects",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxIiwic2NwIjoidXNlciIsImF1ZCI6bnVsbCwiaWF0IjoxNjE2NDI4Mjk4LCJleHAiOjE2MTY1MTQ2OTgsImp0aSI6ImUzMGRjY2ViLWM1NWUtNDFlZS05YmFjLWNjMWUxOGFiN2I2NyJ9.b2aVaT0aEecdss3dpxjKF8q_PxOAYZCq_krVFtm7Y5Q",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\": \"ToDO list\",\n\t\"navers\": [1]\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "projects/{id}",
+			"request": {
+				"url": "http://0.0.0.0:3012/projects",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxIiwic2NwIjoidXNlciIsImF1ZCI6bnVsbCwiaWF0IjoxNjE2NDI4Mjk4LCJleHAiOjE2MTY1MTQ2OTgsImp0aSI6ImUzMGRjY2ViLWM1NWUtNDFlZS05YmFjLWNjMWUxOGFiN2I2NyJ9.b2aVaT0aEecdss3dpxjKF8q_PxOAYZCq_krVFtm7Y5Q",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"user\":{\n\t\t\"email\": \"hudson.guedes@gmail.com\",\n\t\t\"password\": \"123456\"\n\t}\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "signup",
+			"request": {
+				"url": "http://0.0.0.0:3012/signup",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"user\": {\n\t\"email\": \"hudson.guedes@gmail.com\",\n\t\"password\": \"123456\"\n\t}\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "projects/{id}",
+			"request": {
+				"url": "http://0.0.0.0:3012/projects/1",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxIiwic2NwIjoidXNlciIsImF1ZCI6bnVsbCwiaWF0IjoxNjE2NDI4Mjk4LCJleHAiOjE2MTY1MTQ2OTgsImp0aSI6ImUzMGRjY2ViLWM1NWUtNDFlZS05YmFjLWNjMWUxOGFiN2I2NyJ9.b2aVaT0aEecdss3dpxjKF8q_PxOAYZCq_krVFtm7Y5Q",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"user\":{\n\t\t\"email\": \"hudson.guedes@gmail.com\",\n\t\t\"password\": \"123456\"\n\t}\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "projects/{id}",
+			"request": {
+				"url": "http://0.0.0.0:3012/projects/2",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxIiwic2NwIjoidXNlciIsImF1ZCI6bnVsbCwiaWF0IjoxNjE2NDI4Mjk4LCJleHAiOjE2MTY1MTQ2OTgsImp0aSI6ImUzMGRjY2ViLWM1NWUtNDFlZS05YmFjLWNjMWUxOGFiN2I2NyJ9.b2aVaT0aEecdss3dpxjKF8q_PxOAYZCq_krVFtm7Y5Q",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\": \"Todo List\",\n\t\"navers\": [1]\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "projects/{id}",
+			"request": {
+				"url": "http://0.0.0.0:3012/projects/4",
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxIiwic2NwIjoidXNlciIsImF1ZCI6bnVsbCwiaWF0IjoxNjE2NDI4Mjk4LCJleHAiOjE2MTY1MTQ2OTgsImp0aSI6ImUzMGRjY2ViLWM1NWUtNDFlZS05YmFjLWNjMWUxOGFiN2I2NyJ9.b2aVaT0aEecdss3dpxjKF8q_PxOAYZCq_krVFtm7Y5Q",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\": \"API ambev\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "logout",
+			"request": {
+				"url": "http://0.0.0.0:3012/logout",
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer  eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIyIiwic2NwIjoidXNlciIsImF1ZCI6bnVsbCwiaWF0IjoxNjE2NDI3NjY4LCJleHAiOjE2MTY1MTQwNjgsImp0aSI6IjRkODBkOGY2LTczYzAtNDQ1Yy1hN2YyLTM2OTE0MzQ3OGM3MCJ9.Aq9BqVAVJ8fcIZBe-qUZgjxp39czW-hu7cYG3f5izyI",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t \"user\": {\n    \t\"email\": \"hudson.guedes@gmail.com\",\n    \t\"password\": \"123456\"\n  }\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
